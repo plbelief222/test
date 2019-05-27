@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "请输入yes或者no" ANS
+case $ANS in 
+[Yy]|[Yy][Ee][Ss])
+echo "you answer is yes";;
+[Nn]|[Nn][Oo])
+echo "you answer is no";;
+*)
+echo "please answer yes or no";;
+esac

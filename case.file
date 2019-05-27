@@ -1,0 +1,14 @@
+#!/bin/bash
+read -p "please input a file's path"  P
+[ -z $P ] && { echo "please input  path";exit; }
+c=`ls -ld $P | cut -c 1`
+case $c in
+-)
+echo "the file is ordinary file";;
+d)
+echo "the filw is dir file";;
+l)
+echo "the file is link file";;
+*)
+echo "the file is other";;
+esac

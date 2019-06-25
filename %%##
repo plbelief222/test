@@ -1,0 +1,13 @@
+a=111222333444555666
+[root@mysql4 ~]# echo ${a#2*}
+111222333444555666
+[root@mysql4 ~]# echo ${a#2}
+111222333444555666
+[root@mysql4 ~]# echo ${a#*2}
+22333444555666
+[root@mysql4 ~]# echo ${a##*2}
+333444555666
+[root@mysql4 ~]# echo ${a%2*}
+11122
+[root@mysql4 ~]# echo ${a%%2*}
+111

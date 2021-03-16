@@ -33,4 +33,3 @@ if [ ${#FAIL_COUNT[*]} -eq 2 ];then
 done
 
 
-111
